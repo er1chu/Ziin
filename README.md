@@ -28,9 +28,10 @@ As a graphic designer by trade, I'm aware of the implications and consequences s
 ##Changelog
 
 ###31 Jan - 1 Feb
-1. Had the idea for this project sometime around 10:00pm. It is now 2:31 am as I draft this.
-2. Added the booklet model. Unsure if creating users is even necessary or fitting.
+1. Had the idea for this project sometime around 10:00pm. It is now 4:03 am as I draft this. I'm going to call it a night.
+2. Added the booklet model with Paperclip. Unsure if creating users is even necessary or fitting.
 
 ##To-do
 1. Front-end design
 2. PDF Templating
+3. Convert form to Wizard
