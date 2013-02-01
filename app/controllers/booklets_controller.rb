@@ -17,7 +17,12 @@ class BookletsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @booklet }
+      format.pdf {
+        html = render_to_string(:action => "show.html.erb", :formats => [:html])
+        kit = PDFKit.new(html)
+        send_data(kit.to_pdf, :filename => "booklet.pdf", :type => 'application/pdf')
+      return
+      }
     end
   end
 

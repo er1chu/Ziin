@@ -58,5 +58,11 @@ module Ziin
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    require 'pdfkit'
+    config.middleware.use "PDFKit::Middleware"
+
+    PDFKit.configure do |config|
+        config.wkhtmltopdf = { :exe_path => '/usr/local/bin/wkhtmltopdf' }
+    end
   end
 end

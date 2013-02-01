@@ -28,8 +28,9 @@ As a graphic designer by trade, I'm aware of the implications and consequences s
 ##Changelog
 
 ###31 Jan - 1 Feb
-1. Had the idea for this project sometime around 10:00pm. It is now 4:03 am as I draft this. I'm going to call it a night.
+1. Had the idea for this project sometime around 10:00pm. It is now 4:03 am as I draft this. Lost 3 hours due to me being a loser with MVC still. I'm going to call it a night.
 2. Added the booklet model with Paperclip. Unsure if creating users is even necessary or fitting.
+3. Okay so I didn't end up calling it a night it's 7:41 am right now. PDFKit is having some issues. Solved with linking actual exec file in application. Now problem is I get a TypeError from my controller that I can't seem to mess with. I asked a question on stackoverflow. Hope these dudes pull a homie move and help me out.
 
 ##To-do
 1. Front-end design
