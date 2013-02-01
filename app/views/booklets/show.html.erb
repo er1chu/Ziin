@@ -1,0 +1,112 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @booklet.title %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @booklet.author %>
+</p>
+<%= image_tag @booklet.cover_img.url %>
+<p>
+  <b>Page 1:</b>
+  <%= @booklet.page_1 %>
+</p>
+<%= image_tag @booklet.img_1.url %>
+
+<p>
+  <b>Page 2:</b>
+  <%= @booklet.page_2 %>
+</p>
+<%= image_tag @booklet.img_2.url %>
+
+<p>
+  <b>Page 3:</b>
+  <%= @booklet.page_3 %>
+</p>
+<%= image_tag @booklet.img_3.url %>
+<p>
+  <b>Page 4:</b>
+  <%= @booklet.page_4 %>
+</p>
+<%= image_tag @booklet.img_4.url %>
+
+<p>
+  <b>Page 5:</b>
+  <%= @booklet.page_5 %>
+</p>
+<%= image_tag @booklet.img_5.url %>
+
+
+<p>
+  <b>Page 6:</b>
+  <%= @booklet.page_6 %>
+</p>
+<%= image_tag @booklet.img_6.url %>
+
+
+<p>
+  <b>Page 7:</b>
+  <%= @booklet.page_7 %>
+</p>
+<%= image_tag @booklet.img_7.url %>
+
+
+<p>
+  <b>Page 8:</b>
+  <%= @booklet.page_8 %>
+</p>
+<%= image_tag @booklet.img_8.url %>
+
+<p>
+  <b>Page 9:</b>
+  <%= @booklet.page_9 %>
+</p>
+<%= image_tag @booklet.img_9.url %>
+
+
+<p>
+  <b>Page 10:</b>
+  <%= @booklet.page_10 %>
+</p>
+<%= image_tag @booklet.img_10.url %>
+
+
+<p>
+  <b>Page 11:</b>
+  <%= @booklet.page_11 %>
+</p>
+<%= image_tag @booklet.img_11.url %>
+
+
+<p>
+  <b>Page 12:</b>
+  <%= @booklet.page_12 %>
+</p>
+<%= image_tag @booklet.img_12.url %>
+
+<p>
+  <b>Page 13:</b>
+  <%= @booklet.page_13 %>
+</p>
+<%= image_tag @booklet.img_13.url %>
+
+<p>
+  <b>Page 14:</b>
+  <%= @booklet.page_14 %>
+</p>
+<%= image_tag @booklet.img_14.url %>
+
+<p>
+  <b>Back cover:</b>
+  <%= @booklet.back_cover %>
+</p>
+<%= image_tag @booklet.back_cover_img.url %>
+
+<p>
+
+  <%= link_to 'Edit', edit_booklet_path(@booklet) %> |
+  <%= link_to 'Back', booklets_path %>
+</p>

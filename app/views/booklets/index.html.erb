@@ -1,0 +1,49 @@
+<h1>Booklets</h1>
+
+<% @booklets.each do |booklet| %>
+
+    <h2>Title</h2>
+        <%= booklet.title %>
+    <h2>Author</h2>
+        <%= booklet.author %>
+    <h2>Page 1</h2>
+        <%= booklet.page_1 %>
+    <h2>Page 2</h2>
+        <%= booklet.page_2 %>
+    <h2>Page 3</h2>
+        <%= booklet.page_3 %>
+    <h2>Page 4</h2>
+        <%= booklet.page_4 %>
+    <h2>Page 5</h2>
+        <%= booklet.page_5 %>
+    <h2>Page 6</h2>
+        <%= booklet.page_6 %>
+    <h2>Page 7</h2>
+        <%= booklet.page_7 %>
+    <h2>Page 8</h2>
+        <%= booklet.page_8 %>
+    <h2>Page 9</h2>
+        <%= booklet.page_9 %>
+    <h2>Page 10</h2>
+        <%= booklet.page_10 %>
+    <h2>Page 11</h2>
+        <%= booklet.page_11 %>
+    <h2>Page 12</h2>
+        <%= booklet.page_12 %>
+    <h2>Page 13</h2>
+        <%= booklet.page_13 %>
+    <h2>Page 14</h2>
+        <%= booklet.page_14 %>
+    <h2>Back cover</h2>
+        <%= booklet.back_cover %>
+
+<br />
+
+
+<%= link_to 'Show', booklet %> <%= link_to 'Edit', edit_booklet_path(booklet) %> <%= link_to 'Destroy', booklet, method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %><br />
+
+
+<br />
+
+<%= link_to 'New Booklet', new_booklet_path %>

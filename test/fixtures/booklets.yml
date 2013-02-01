@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  author: MyString
+  page_1: MyText
+  page_2: MyText
+  page_3: MyText
+  page_4: MyText
+  page_5: MyText
+  page_6: MyText
+  page_7: MyText
+  page_8: MyText
+  page_9: MyText
+  page_10: MyText
+  page_11: MyText
+  page_12: MyText
+  page_13: MyText
+  page_14: MyText
+  back_cover: MyText
+
+two:
+  title: MyString
+  author: MyString
+  page_1: MyText
+  page_2: MyText
+  page_3: MyText
+  page_4: MyText
+  page_5: MyText
+  page_6: MyText
+  page_7: MyText
+  page_8: MyText
+  page_9: MyText
+  page_10: MyText
+  page_11: MyText
+  page_12: MyText
+  page_13: MyText
+  page_14: MyText
+  back_cover: MyText

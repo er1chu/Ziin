@@ -1,0 +1,104 @@
+<%= form_for @booklet, :html => { :multipart => true} do |f| %>
+  <% if @booklet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@booklet.errors.count, "error") %> prohibited this booklet from being saved:</h2>
+
+      <ul>
+      <% @booklet.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :author %><br />
+    <%= f.text_field :author %><br />
+  </div>
+  <div class="field">
+    Choose a Cover Image <br />
+    <%= f.file_field :cover_img %> 
+  </div>
+  <div class="field">
+    <%= f.label :page_1 %><br />
+    <%= f.text_area :page_1 %><br />
+    <%= f.file_field :img_1 %> 
+  </div>
+  <div class="field">
+    <%= f.label :page_2 %><br />
+    <%= f.text_area :page_2 %><br />
+    <%= f.file_field :img_2 %> 
+  </div>
+  <div class="field">
+    <%= f.label :page_3 %><br />
+    <%= f.text_area :page_3 %><br />
+    <%= f.file_field :img_3 %> 
+  </div>
+  <div class="field">
+    <%= f.label :page_4 %><br />
+    <%= f.text_area :page_4 %><br />
+    <%= f.file_field :img_4 %> 
+  </div>
+  <div class="field">
+    <%= f.label :page_5 %><br />
+    <%= f.text_area :page_5 %><br />
+    <%= f.file_field :img_5 %> 
+  </div>
+  <div class="field">
+    <%= f.label :page_6 %><br />
+    <%= f.text_area :page_6 %><br />
+    <%= f.file_field :img_6 %> 
+  </div>
+  <div class="field">
+    <%= f.label :page_7 %><br />
+    <%= f.text_area :page_7 %><br />
+    <%= f.file_field :img_7 %> 
+  </div>
+  <div class="field">
+    <%= f.label :page_8 %><br />
+    <%= f.text_area :page_8 %><br />
+    <%= f.file_field :img_8 %> 
+  </div>
+  <div class="field">
+    <%= f.label :page_9 %><br />
+    <%= f.text_area :page_9 %><br />
+    <%= f.file_field :img_9 %> 
+  </div>
+  <div class="field">
+    <%= f.label :page_10 %><br />
+    <%= f.text_area :page_10 %><br />
+    <%= f.file_field :img_10 %> 
+  </div>
+  <div class="field">
+    <%= f.label :page_11 %><br />
+    <%= f.text_area :page_11 %><br />
+    <%= f.file_field :img_11 %> 
+  </div>
+  <div class="field">
+    <%= f.label :page_12 %><br />
+    <%= f.text_area :page_12 %><br />
+    <%= f.file_field :img_12 %> 
+  </div>
+  <div class="field">
+    <%= f.label :page_13 %><br />
+    <%= f.text_area :page_13 %><br />
+    <%= f.file_field :img_13 %> 
+  </div>
+  <div class="field">
+    <%= f.label :page_14 %><br />
+    <%= f.text_area :page_14 %><br />
+    <%= f.file_field :img_14 %> 
+  </div>
+  <div class="field">
+    <%= f.label :back_cover %><br />
+    <%= f.text_area :back_cover %><br />
+    <%= f.file_field :back_cover_img %> 
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
