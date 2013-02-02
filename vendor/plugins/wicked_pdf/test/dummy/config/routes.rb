@@ -1,9 +1,4 @@
-Ziin::Application.routes.draw do
-  resources :booklets
-  root to: 'booklets#new'
-
-  get '/booklets/(:id).pdf' => "booklets#show"
-
+Dummy::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
