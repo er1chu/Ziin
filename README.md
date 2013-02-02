@@ -12,7 +12,7 @@ D.I.Y. or Don't
 
 3. Automatically generate correctly collated and print-ready PDFs for users to send to print (with possible listings of local printers via geolocation)
 
-4. Establish an archetypal format/template for producing a self-published zine for non-designers, lazy designers, parents trying to relate to their kids who just discovered Discord Records or the Werkplaats, etc.
+4. Establish an archetypal format/template for producing a self-published zine for non-designers, lazy designers, parents trying to relate to their kids who just discovered Dischord Records or the Werkplaats, etc.
 
 ###Some tertiary goals or considerations would be:
 
