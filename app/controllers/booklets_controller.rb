@@ -20,7 +20,7 @@ class BookletsController < ApplicationController
 
       format.json { render json: @booklet }
       format.pdf {
-        html = "render_to_string(:layout => false, :action => "show.html.erb")"
+        html = render_to_string(:layout => false, :action => "show.html.erb")
         kit = PDFKit.new(html, :orientation => 'Landscape')
         send_data(kit.to_pdf, :filename => "booklet.pdf", :type => 'application/pdf')
         return
@@ -33,12 +33,9 @@ class BookletsController < ApplicationController
   def new
     @booklet = Booklet.new
 
-    respond_to do |format|
+      respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @booklet }
-      format.pdf do
-        render :pdf => "booklet.pdf"
-      end
     end
   end
 
