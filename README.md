@@ -27,6 +27,9 @@ As a graphic designer by trade, I'm aware of the implications and consequences s
 
 ##Changelog
 
+###2 Feb
+1. Fixed PDFKit error, thanks to Kevin Huynh. Problems with image paths. Will look into it.
+
 ###31 Jan - 1 Feb
 1. Had the idea for this project sometime around 10:00pm. It is now 4:03 am as I draft this. Lost 3 hours due to me being a loser with MVC still. I'm going to call it a night.
 2. Added the booklet model with Paperclip. Unsure if creating users is even necessary or fitting.
@@ -36,3 +39,4 @@ As a graphic designer by trade, I'm aware of the implications and consequences s
 1. Front-end design
 2. PDF Templating
 3. Convert form to Wizard
+4. Research adjustments made to PDFkit on Heroku
