@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
-
+gem 'unicorn' 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -25,9 +25,7 @@ gem 'jquery-rails'
 gem "paperclip", "~> 3.0"
 
 gem "pdfkit"
-
-
-gem "wkhtmltopdf"
+gem 'wkhtmltopdf'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

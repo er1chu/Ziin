@@ -65,10 +65,7 @@ module Ziin
     #    config.wkhtmltopdf = { :exe_path => '/usr/local/bin/wkhtmltopdf' }
    # end
     require 'pdfkit'
-    config.middleware.use "PDFKit::Middleware"
+    config.middleware.use PDFKit::Middleware, :print_media_type => true
 
-    PDFKit.configure do |config|
-        config.wkhtmltopdf = { :exe_path => '/usr/local/bin/wkhtmltopdf' }
-    end
   end
 end

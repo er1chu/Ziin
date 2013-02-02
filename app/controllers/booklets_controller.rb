@@ -24,7 +24,7 @@ class BookletsController < ApplicationController
         kit = PDFKit.new(html, :orientation => 'Landscape')
         send_data(kit.to_pdf, :filename => "booklet.pdf", :type => 'application/pdf')
         return
-      }
+       }
     end
   end
 
