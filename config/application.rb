@@ -55,6 +55,7 @@ module Ziin
 
     # Enable the asset pipeline
     config.assets.enabled = true
+    config.assets.paths << "#{Rails.root}/app/assets/fonts"
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
@@ -65,7 +66,7 @@ module Ziin
     #    config.wkhtmltopdf = { :exe_path => '/usr/local/bin/wkhtmltopdf' }
    # end
     require 'pdfkit'
-    config.middleware.use PDFKit::Middleware, :print_media_type => true
+    config.middleware.use PDFKit::Middleware#, :print_media_type => true
 
   end
 end

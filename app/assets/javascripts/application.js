@@ -13,3 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+document.ready(function() {
+	$(".tile").click(function() {
+      var next;
+      next = $(this).parent().next().find(".tile");
+      $("html, body").scrollTop(next.offset().top);
+	});
+});

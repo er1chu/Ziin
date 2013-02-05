@@ -27,6 +27,12 @@ As a graphic designer by trade, I'm aware of the implications and consequences s
 
 ##Changelog
 
+###Feb 4
+Started on PDF views. Ugly inline CSS for now.
+
+###Feb 3
+Started on front end views.
+
 ###2 Feb
 1. Fixed PDFKit error, thanks to Kevin Huynh. Problems with image paths. Will look into it.
 

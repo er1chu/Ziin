@@ -1,31 +1,95 @@
-body {
-  background-color: #fff;
-  color: #333;
-  margin: 30px;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+@font-face {
+    font: {
+       family: 'Bau';
+       weight: 'normal';
+       style: 'normal';
+    }
+    src: asset-url('BauWeb.eot', font);
+    src: asset-url('BauWeb.woff', font) format('woff'),
+         asset-url('BauComp.ttf', font) format('truetype')
 }
 
+
+
+body, html {
+  background-color: #22cc03;
+  color: #f1f2f2;
+  width: 100%;
+  margin: 0;
+  height: 100%;
+  letter-spacing: 1px;
+  font-family: 'Bau', Arial, Times,verdana,helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+.center {
+ position: relative;
+  left: 50%;
+  width: 50%;
+  margin-left: -25%;
+}
+
+#header {
+  width: 50%;
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+  width: 50%;
+  margin: 50px 0 60px 0;
+  letter-spacing: 1px;
+  line-height: 50px;
+}
+  #container img {
+    display:block;
+    margin: auto;
+  }
+
+.tile {
+  height: 95%;
+  position: relative;
+  width: 100%;
+  padding: 5% 0 0 0;
+
+
+}
+
+#new_a {
+  width: 100%;
+  height: 100%;
+}
+#new_b {
+  width: 100%;
+  max-height: 100%;
+  background: #70f;
+}
+
+.tile img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family:'Bau', Arial, Times, verdana, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  color: #fff;
 }
 
 pre {
   background-color: #eee;
   padding: 10px;
-  font-size: 11px;
+  font-size: 13px;
 }
 
 a {
-  color: #000;
+  color: #fff;
   &:visited {
     color: #666;
   }
   &:hover {
     color: #fff;
+    text-decoration: underline;
     background-color: #000;
   }
 }
@@ -34,6 +98,44 @@ div {
   &.field, &.actions {
     margin-bottom: 10px;
   }
+}
+
+input{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid #fff;
+  width: 50%;
+  position: relative;
+  font-family: 'Bau';
+  left: 50%;
+  margin-left: -25%;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #fff;
+  background-color: transparent;
+
+
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+textarea {
+  border: 2px solid #fff;
+  width: 100%;
+  resize: none;
+  position: relative;
+  font-family: 'Bau';
+  left: 50%;
+  height: 200px;
+  margin-bottom: 10px;
+  margin-left: -25%;
+  color: #f1f2f2;
+  width: 50%;
+  font-size: 20px;
+  background-color: transparent;
 }
 
 #notice {
@@ -68,3 +170,28 @@ div {
     list-style: square;
   }
 }
+
+.button {
+  border: 2px solid #fff;
+}
+
+::-webkit-input-placeholder {
+   color: #f1f2f2;
+   font-family: 'Bau';
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #f1f2f2;
+   font-family: 'Bau';
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #f1f2f2;
+   font-family: 'Bau';
+}
+
+:-ms-input-placeholder {  
+   color: #f1f2f2;
+   font-family: 'Bau';
+}
+
