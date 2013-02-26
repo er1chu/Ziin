@@ -1,15 +1,7 @@
 <style type="text/css">
-  @font-face {
-      font-family: 'Bau';
-      src: url('https://dl.dropbox.com/u/22686157/BauWeb.eot');
-      src: url('https://dl.dropbox.com/u/22686157/BauWeb.eot?#iefix') format('embedded-opentype'),
-           url('https://dl.dropbox.com/u/22686157/BauWeb.woff') format('woff'),
-           url('https://dl.dropbox.com/u/22686157/BauComp.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-    }
+  
   body {
-    font-family: 'Bau';
+    font-family: 'Times', 'Times New Roman', 'Bau';
     font-size: 16px;
   }
 
@@ -50,14 +42,14 @@
     <%= @booklet.title %>
   </div>
     <div class="author"><%= @booklet.author %><br />
-      <%= image_tag @booklet.cover_img.url %>
+      <%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.cover_img.url}" %>
     </div>
 </div>
 <div class="page" id="one">
 <p>
 <%= @booklet.page_1 %>
 </p>
-<%= image_tag @booklet.img_1.url %>
+<%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.img_1.url}" %>
 </div>
 
 <div class="page" id="two">
@@ -65,39 +57,39 @@
   <b>Page 2:</b>
   <%= @booklet.page_2 %>
 </p>
-<%= image_tag @booklet.img_2.url %>
+<%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.img_2.url}" %>
 </div>
 
 <p>
   <b>Page 3:</b>
   <%= @booklet.page_3 %>
 </p>
-<%= image_tag @booklet.img_3.url %>
+<%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.img_3.url}" %>
 <p>
   <b>Page 4:</b>
   <%= @booklet.page_4 %>
 </p>
-<%= image_tag @booklet.img_4.url %>
+<%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.img_4.url}" %>
 
 <p>
   <b>Page 5:</b>
   <%= @booklet.page_5 %>
 </p>
-<%= image_tag @booklet.img_5.url %>
+<%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.img_5.url}" %>
 
 
 <p>
   <b>Page 6:</b>
   <%= @booklet.page_6 %>
 </p>
-<%= image_tag @booklet.img_6.url %>
+<%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.img_6.url}" %>
 
 
 <p>
   <b>Page 7:</b>
   <%= @booklet.page_7 %>
 </p>
-<%= image_tag @booklet.img_7.url %>
+<%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.img_7.url}" %>
 
 
 <p>
