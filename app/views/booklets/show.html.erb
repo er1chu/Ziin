@@ -1,29 +1,34 @@
 <style type="text/css">
   @font-face {
       font-family: 'Bau';
-      src: url('https://dl.dropbox.com/u/22686157/BauWeb.eot');
-      src: url('https://dl.dropbox.com/u/22686157/BauWeb.eot?#iefix') format('embedded-opentype'),
-           url('https://dl.dropbox.com/u/22686157/BauWeb.woff') format('woff'),
-           url('https://dl.dropbox.com/u/22686157/BauComp.ttf') format('truetype');
+      src: url('http://mr-journal.com/fonts/BauWeb.eot');
+      src: url('http://mr-journal.com/fonts/BauWeb.eot?#iefix') format('embedded-opentype'),
+           url('http://mr-journal.com/fonts/BauWeb.woff') format('woff'),
+           url('http://mr-journal.com/fonts/BauComp.ttf') format('truetype');
       font-weight: normal;
       font-style: normal;
     }
   body {
-    font-family: 'Bau';
+    font-family: Times, "Times New Roman", 'Bau';
     font-size: 16px;
   }
 
   .page {
     width: 46%;
     height: 710px;
+    overflow: hidden;
     float: left;
     padding: 0 2% 0 2%;
   }
 
   .title {
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
-    font-size: 60px;
+    word-wrap: break-word;
+    font-size: 260px;
+    letter-spacing:-1px;
+    line-height: 120px;
+
   }
 
   .author {
@@ -49,15 +54,12 @@
   <div class="title">
     <%= @booklet.title %>
   </div>
-    <div class="author"><%= @booklet.author %><br />
-      <%= image_tag @booklet.cover_img.url %>
-    </div>
 </div>
 <div class="page" id="one">
 <p>
 <%= @booklet.page_1 %>
 </p>
-<%= image_tag @booklet.img_1.url %>
+<%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.img_1.url}" %>  
 </div>
 
 <div class="page" id="two">
@@ -65,7 +67,10 @@
   <b>Page 2:</b>
   <%= @booklet.page_2 %>
 </p>
-<%= image_tag @booklet.img_2.url %>
+<%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.img_2.url}" %>
+    <div class="author"><%= @booklet.author %><br />
+
+    </div>
 </div>
 
 <p>
