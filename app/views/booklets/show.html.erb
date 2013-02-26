@@ -1,9 +1,4 @@
 <style type="text/css">
-<<<<<<< HEAD
-  
-  body {
-    font-family: 'Times', 'Times New Roman', 'Bau';
-=======
   @font-face {
       font-family: 'Bau';
       src: url('http://mr-journal.com/fonts/BauWeb.eot');
@@ -15,7 +10,6 @@
     }
   body {
     font-family: Times, "Times New Roman", 'Bau';
->>>>>>> 438b48f6f081f7bfe5dce10314661fc7d526c6aa
     font-size: 16px;
   }
 
@@ -60,22 +54,12 @@
   <div class="title">
     <%= @booklet.title %>
   </div>
-<<<<<<< HEAD
-    <div class="author"><%= @booklet.author %><br />
-      <%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.cover_img.url}" %>
-    </div>
-=======
->>>>>>> 438b48f6f081f7bfe5dce10314661fc7d526c6aa
 </div>
 <div class="page" id="one">
 <p>
 <%= @booklet.page_1 %>
 </p>
-<<<<<<< HEAD
-<%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.img_1.url}" %>
-=======
 <%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.img_1.url}" %>  
->>>>>>> 438b48f6f081f7bfe5dce10314661fc7d526c6aa
 </div>
 
 <div class="page" id="two">
@@ -84,44 +68,41 @@
   <%= @booklet.page_2 %>
 </p>
 <%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.img_2.url}" %>
-<<<<<<< HEAD
-=======
     <div class="author"><%= @booklet.author %><br />
 
     </div>
->>>>>>> 438b48f6f081f7bfe5dce10314661fc7d526c6aa
 </div>
 
 <p>
   <b>Page 3:</b>
   <%= @booklet.page_3 %>
 </p>
-<%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.img_3.url}" %>
+<%= image_tag @booklet.img_3.url %>
 <p>
   <b>Page 4:</b>
   <%= @booklet.page_4 %>
 </p>
-<%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.img_4.url}" %>
+<%= image_tag @booklet.img_4.url %>
 
 <p>
   <b>Page 5:</b>
   <%= @booklet.page_5 %>
 </p>
-<%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.img_5.url}" %>
+<%= image_tag @booklet.img_5.url %>
 
 
 <p>
   <b>Page 6:</b>
   <%= @booklet.page_6 %>
 </p>
-<%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.img_6.url}" %>
+<%= image_tag @booklet.img_6.url %>
 
 
 <p>
   <b>Page 7:</b>
   <%= @booklet.page_7 %>
 </p>
-<%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.img_7.url}" %>
+<%= image_tag @booklet.img_7.url %>
 
 
 <p>
