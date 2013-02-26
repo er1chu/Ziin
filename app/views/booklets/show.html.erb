@@ -1,21 +1,40 @@
 <style type="text/css">
+<<<<<<< HEAD
   
   body {
     font-family: 'Times', 'Times New Roman', 'Bau';
+=======
+  @font-face {
+      font-family: 'Bau';
+      src: url('http://mr-journal.com/fonts/BauWeb.eot');
+      src: url('http://mr-journal.com/fonts/BauWeb.eot?#iefix') format('embedded-opentype'),
+           url('http://mr-journal.com/fonts/BauWeb.woff') format('woff'),
+           url('http://mr-journal.com/fonts/BauComp.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+  body {
+    font-family: Times, "Times New Roman", 'Bau';
+>>>>>>> 438b48f6f081f7bfe5dce10314661fc7d526c6aa
     font-size: 16px;
   }
 
   .page {
     width: 46%;
     height: 710px;
+    overflow: hidden;
     float: left;
     padding: 0 2% 0 2%;
   }
 
   .title {
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
-    font-size: 60px;
+    word-wrap: break-word;
+    font-size: 260px;
+    letter-spacing:-1px;
+    line-height: 120px;
+
   }
 
   .author {
@@ -41,15 +60,22 @@
   <div class="title">
     <%= @booklet.title %>
   </div>
+<<<<<<< HEAD
     <div class="author"><%= @booklet.author %><br />
       <%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.cover_img.url}" %>
     </div>
+=======
+>>>>>>> 438b48f6f081f7bfe5dce10314661fc7d526c6aa
 </div>
 <div class="page" id="one">
 <p>
 <%= @booklet.page_1 %>
 </p>
+<<<<<<< HEAD
 <%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.img_1.url}" %>
+=======
+<%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.img_1.url}" %>  
+>>>>>>> 438b48f6f081f7bfe5dce10314661fc7d526c6aa
 </div>
 
 <div class="page" id="two">
@@ -58,6 +84,12 @@
   <%= @booklet.page_2 %>
 </p>
 <%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.img_2.url}" %>
+<<<<<<< HEAD
+=======
+    <div class="author"><%= @booklet.author %><br />
+
+    </div>
+>>>>>>> 438b48f6f081f7bfe5dce10314661fc7d526c6aa
 </div>
 
 <p>
