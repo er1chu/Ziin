@@ -21,7 +21,7 @@ class BookletsController < ApplicationController
       format.json { render json: @booklet }
       format.pdf {
         html = render_to_string(:layout => false, :action => "show.html.erb")
-        kit = PDFKit.new(html, :orientation => 'Landscape')
+        kit = PDFKit.new(html)
         send_data(kit.to_pdf, :filename => "booklet.pdf", :type => 'application/pdf')
         return
        }
