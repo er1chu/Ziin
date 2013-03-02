@@ -1,157 +1,160 @@
 <style type="text/css">
-  @font-face {
-      font-family: 'Bau';
-      src: url('http://mr-journal.com/fonts/BauWeb.eot');
-      src: url('http://mr-journal.com/fonts/BauWeb.eot?#iefix') format('embedded-opentype'),
-           url('http://mr-journal.com/fonts/BauWeb.woff') format('woff'),
-           url('http://mr-journal.com/fonts/BauComp.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-    }
+  
   body {
-    font-family: Times, "Times New Roman", 'Bau';
+    font-family: 'Astloch', "Times New Roman", serif;
     font-size: 16px;
-  }
+    }
 
   .page {
-    width: 46%;
-    height: 710px;
-    overflow: hidden;
+    width: 48%;
     float: left;
-    padding: 0 2% 0 2%;
-  }
+    padding: 0 1% 0 1%;
+    }
+
+  .page-break {
+    page-break-before:always; !important
+    }
+
 
   .title {
-    margin-top: 50px;
+    font-size: 180px;
+    margin-left: 100px;
+    margin-top: 40px; 
+    width: 100%;
+    word-spacing: 2px;
+    padding: 20px;
+    border: 4px solid #000;
+    line-height: 160px;
     text-align: center;
-    word-wrap: break-word;
-    font-size: 260px;
-    letter-spacing:-1px;
-    line-height: 120px;
+    }
 
-  }
+
+  .hide {
+    display: none;
+    }
 
   .author {
     text-align: center;
-  }
+    }
 
   img {
     width: 50%;
-  }
+    }
+
 </style>
 
 <p id="notice"><%= notice %></p> 
 
+<%#= #root_url + "assets/booklets/1/Logo.png" %>
 
- <div class="page" id="back_cover">
-  <p>
-  <%= @booklet.back_cover %>
-</p>
-<%= image_tag @booklet.back_cover_img.url %>
+<div class="page" id="back_cover">
+<%= image_tag absolute_attachment_url(@booklet.back_cover_img) %>
 </div>
+
 <div class="page" id="cover">
-  
   <div class="title">
     <%= @booklet.title %>
   </div>
 </div>
-<div class="page" id="one">
-<p>
-<%= @booklet.page_1 %>
-</p>
-<%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.img_1.url}" %>  
+
+<div class="page page-break" id="one">
+  <p>
+    <%= @booklet.page_1 %>
+  </p>
+  <%= image_tag absolute_attachment_url(@booklet.img_1) %>  
 </div>
 
 <div class="page" id="two">
-<p>
-  <b>Page 2:</b>
-  <%= @booklet.page_2 %>
-</p>
-<%= image_tag "#{request.protocol}#{request.host_with_port}#{@booklet.img_2.url}" %>
-    <div class="author"><%= @booklet.author %><br />
-
-    </div>
+  <p>
+    <b>Page 2:</b>
+    <%= @booklet.page_2 %>
+  </p>
+  <%= image_tag absolute_attachment_url(@booklet.img_2) %>
+  <div class="author">
+    <%= @booklet.author %><br />
+  </div>
 </div>
 
 <p>
   <b>Page 3:</b>
   <%= @booklet.page_3 %>
 </p>
-<%= image_tag @booklet.img_3.url %>
+<%= image_tag absolute_attachment_url(@booklet.img_3) %>
 <p>
   <b>Page 4:</b>
   <%= @booklet.page_4 %>
 </p>
-<%= image_tag @booklet.img_4.url %>
+<%= image_tag absolute_attachment_url(@booklet.img_4) %>
 
 <p>
   <b>Page 5:</b>
   <%= @booklet.page_5 %>
 </p>
-<%= image_tag @booklet.img_5.url %>
+<%= image_tag absolute_attachment_url(@booklet.img_5) %>
 
 
 <p>
   <b>Page 6:</b>
   <%= @booklet.page_6 %>
 </p>
-<%= image_tag @booklet.img_6.url %>
+<%= image_tag absolute_attachment_url(@booklet.img_6) %>
 
 
 <p>
   <b>Page 7:</b>
   <%= @booklet.page_7 %>
 </p>
-<%= image_tag @booklet.img_7.url %>
+<%= image_tag absolute_attachment_url(@booklet.img_7) %>
 
 
 <p>
   <b>Page 8:</b>
   <%= @booklet.page_8 %>
 </p>
-<%= image_tag @booklet.img_8.url %>
+<%= image_tag absolute_attachment_url(@booklet.img_8) %>
 
 <p>
   <b>Page 9:</b>
   <%= @booklet.page_9 %>
 </p>
-<%= image_tag @booklet.img_9.url %>
+<%= image_tag absolute_attachment_url(@booklet.img_9) %>
 
 
 <p>
   <b>Page 10:</b>
   <%= @booklet.page_10 %>
 </p>
-<%= image_tag @booklet.img_10.url %>
+<%= image_tag absolute_attachment_url(@booklet.img_10) %>
 
 
 <p>
   <b>Page 11:</b>
   <%= @booklet.page_11 %>
 </p>
-<%= image_tag @booklet.img_11.url %>
+<%= image_tag absolute_attachment_url(@booklet.img_11) %>
 
 
 <p>
   <b>Page 12:</b>
   <%= @booklet.page_12 %>
 </p>
-<%= image_tag @booklet.img_12.url %>
+<%= image_tag absolute_attachment_url(@booklet.img_12) %>
 
 <p>
   <b>Page 13:</b>
   <%= @booklet.page_13 %>
 </p>
-<%= image_tag @booklet.img_13.url %>
+<%= image_tag absolute_attachment_url(@booklet.img_13) %>
 
 <p>
   <b>Page 14:</b>
   <%= @booklet.page_14 %>
 </p>
-<%= image_tag @booklet.img_14.url %>
+<%= image_tag absolute_attachment_url(@booklet.img_14) %>
 
-<p>
-
+<div class="hide">
+  <p>
   <%= link_to 'Edit', edit_booklet_path(@booklet) %> |
   <%= link_to 'Back', booklets_path %>
-</p>
+  </p>
+</div>
