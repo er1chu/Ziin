@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '>= 3.2.12'
+gem 'rails', '3.2.12'
 gem 'unicorn' 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -20,7 +20,9 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'json', '>= 1.7.7'
+gem 'json', '~> 1.7.7'
+
+gem "activerecord", "~> 3.2.12"
 
 gem 'jquery-rails'
 
